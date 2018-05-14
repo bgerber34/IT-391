@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <title>Events </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+    </h:head>
+    <h:body style="background-color: gray">
+        <h:panelGroup layout="block" styleClass="container">
+            <h:panelGroup layout="block" styleClass="row centered-form">
+                <h:panelGroup layout="block" styleClass="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4"
+                              style="background-color: limegreen">
+                    <h:panelGroup layout="block" styleClass="panel panel-default">
+                        <center><h:graphicImage value="#{resource['images:prairie central.jpg']}" width="200" height="60" alt=""/></center>                   
+                        <img src="prairie central.jpg" alt="" width = "360" height="190"/>
+                        <h:panelGroup layout="block" styleClass="panel-heading">
+                            <center><h3 class="panel-title">Events </h3></center>
+                        </h:panelGroup>
+                        <br></br>
+                        <h:panelGroup layout="block" styleClass="panel-body">
+                          
+                                <h:panelGroup layout="block" styleClass="form-group">
+                                    <h:link outcome="turkeyShoot.jsp" value="Turkey Shoot" styleClass="btn btn-warning btn-block"  id="turkeyShoot" />
+                                    
+                                    <h:link outcome="youthShoot.jsp" value="Youth Shoot" styleClass="btn btn-warning btn-block" id="youthShoot" />
+                                    <h:link outcome="splatBoardShoot.jsp" value="Splatter Board Shoot" styleClass="btn btn-warning btn-block" id="splatBoardShoot" />
+                                    <h:link outcome="trapLeague.jsp" value="Weekly Trap Leagues" styleClass="btn btn-warning btn-block" id="trapLeague" />
+                                    <h:link outcome="raffles.jsp" value="Raffles" styleClass="btn btn-warning btn-block" id="raffles" />
+                                    <h:link outcome="otherActivites.jsp" value="Other Activities " styleClass="btn btn-warning btn-block" id="otherActivites" />
+                                    <h:link outcome="home.xhtml" value="Home  " styleClass="btn btn-warning btn-block" id="home" />
+                                    
+                                </h:panelGroup>
+                            
+                        </h:panelGroup>
+                    </h:panelGroup>
+                </h:panelGroup>
+            </h:panelGroup>
+        </h:panelGroup>
+    </h:body>
+</html>
